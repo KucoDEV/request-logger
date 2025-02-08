@@ -1,0 +1,15 @@
+{
+  "name": "@kucodev/request-logger",
+  "version": "1.0.5",
+  "description": "Un package qui log des requêtes API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kucodev/request-logger.git"
+  },
+  "author": "Kucodev",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
