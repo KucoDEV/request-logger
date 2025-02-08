@@ -1,6 +1,6 @@
 {
   "name": "@kucodev/request-logger",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Un package qui log des requêtes API",
   "main": "index.js",
   "repository": {
