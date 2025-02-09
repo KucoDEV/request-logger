@@ -2,13 +2,13 @@ const { logMessage } = require("./utils/logger");
 const { fetchData } = require("./utils/api");
 
 async function processRequest(url) {
-    logMessage(`Requête envoyée à ${url}`);
+    logMessage(`Request sent to ${url}`);
     try {
         const data = await fetchData(url);
-        logMessage(`Données reçues avec succès`);
+        logMessage(`Data received successfully`);
         return data;
     } catch (error) {
-        logMessage(`Erreur: ${error.message}`);
+        logMessage(`Error: ${error.message}`);
         throw error;
     }
 }

@@ -1,42 +1,41 @@
 # 📦 Request Logger
 
 ## Description
-`request-logger` est un package npm permettant de journaliser les requêtes et récupérer des données depuis une API tout en enregistrant les logs dans un fichier local.
+`request-logger` is an npm package that allows logging requests and retrieving data from an API while storing logs in a local file.
 
-## 📌 Fonctionnalités
-- 📜 **Journalisation des requêtes** dans un fichier `logs.txt`
-- 🌍 **Récupération de données API** via `axios`
-- 🔧 **Facile à utiliser et à intégrer** dans n'importe quel projet Node.js
+## 📌 Features
+- 📜 **Request logging** in a `logs.txt` file
+- 🌍 **API data retrieval** via `axios`
+- 🔧 **Easy to use and integrate** into any Node.js project
 
 ## 🚀 Installation
-Assurez-vous d'avoir Node.js installé, puis exécutez :
+Make sure you have Node.js installed, then run:
 
 ```sh
 npm install @kucodev/request-logger
 ```
 
-## 🛠️ Utilisation
+## 🛠️ Usage
 
 ```javascript
 const processRequest = require("@kucodev/request-logger");
 
 processRequest("https://jsonplaceholder.typicode.com/posts/1")
-    .then(data => console.log("Données reçues:", data))
-    .catch(err => console.error("Erreur:", err));
+    .then(data => console.log("Received data:", data))
+    .catch(err => console.error("Error:", err));
 ```
 
-## 📂 Structure du projet
+## 📂 Project Structure
 ```
 request-logger/
 │── utils/
-│   ├── logger.js        # Gère la journalisation des événements
-│   ├── api.js           # Récupère des données API avec Axios
-│── index.js             # Point d'entrée du package
-│── package.json         # Métadonnées et dépendances
-│── README.md            # Documentation du package
-│── logs.txt             # Fichier généré pour stocker les logs
+│   ├── logger.js        # Handles event logging
+│   ├── api.js           # Retrieves API data using Axios
+│── index.js             # Package entry point
+│── package.json         # Metadata and dependencies
+│── README.md            # Package documentation
+│── logs.txt             # Generated file to store logs
 ```
 
-## 📜 Licence
-Ce projet est sous licence **MIT**.
-
+## 📜 License
+This project is licensed under the **MIT** license.

@@ -5,7 +5,7 @@ async function fetchData(url) {
         const response = await axios.get(url);
         return response.data;
     } catch (error) {
-        throw new Error(`Erreur lors de la récupération des données: ${error.message}`);
+        throw new Error(`Error while retrieving data: ${error.message}`);
     }
 }
 
